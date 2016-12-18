@@ -1,4 +1,4 @@
-@import '_normalize.scss';
+@import '_normalize.scss'; // test
 
 $font-family-primary: Lato, sans-serif;
 
@@ -9,10 +9,15 @@ body {
 }
 
 .header {
-  color: #fff;
   background-color: $color-primary;
+
+  &--logo {
+    text-decoration: none;
+    font-weight:bold;
+  }
 
   &--logo, &--navigation, &--nav-item {
     display: inline-block;
+    color: #fff;
   }
 }

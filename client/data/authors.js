@@ -35,3 +35,5 @@ const authors = {
     "avatar": "https://hoodwork-production.s3.amazonaws.com/uploads/user/headshot/14518/Lisa_Amand.jpg"
   }
 }
+
+export default authors;
