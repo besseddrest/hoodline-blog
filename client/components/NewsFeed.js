@@ -1,6 +1,7 @@
 // Component for newsfeed
 import React from 'react';
 import FeedItem from './FeedItem';
+import Search from './Search';
 
 const NewsFeed = React.createClass({
   render() {
@@ -10,7 +11,9 @@ const NewsFeed = React.createClass({
         <div className="col-md-6">
           {this.props.news.map((item, i) => <FeedItem {...this.props} key={i} i={i} item={item} />)}
         </div>
-        <div className="right-col col-md-3 hidden-sm hidden-xs bg-info"></div>
+        <div className="right-col col-md-3 hidden-sm hidden-xs bg-info">
+          <Search {...this.props} />
+        </div>
       </div>
     )
   }

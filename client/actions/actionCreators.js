@@ -1,4 +1,10 @@
-// increment likes
+export function submitSearch(value, state) {
+  return {
+    type: 'SUBMIT_SEARCH',
+    value
+  }
+}
+
 export function incrementLikes(index) {
   return {
     type: 'INCREMENT_LIKES',
@@ -6,7 +12,6 @@ export function incrementLikes(index) {
   }
 }
 
-// add comment
 export function addComment(id, author, comment) {
   return {
     type: 'ADD_COMMENT',

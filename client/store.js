@@ -8,8 +8,10 @@ import rootReducer from './reducers/index';
 import news from './data/news';
 
 // create an object for the default data
+// there should be a key for each reducer
 const defaultState = {
-  news
+  news,
+  search: news
 };
 
 const store = createStore(rootReducer, defaultState);
