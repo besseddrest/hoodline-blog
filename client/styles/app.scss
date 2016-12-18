@@ -1,23 +1,115 @@
-@import '_normalize.scss'; // test
+@import '_normalize.scss';
 
-$font-family-primary: Lato, sans-serif;
-
-$color-primary: rgba(255,51,0,0.95);
+$dark: #000;
+$light: #fff;
+$warm: rgba(255,51,0,0.95);
 
 body {
-  font-family: $font-family-primary;
+  background-color: #eeeff0;
+  padding-top: 65px;
 }
 
+/* Delete this later */
+.left-col, .right-col {
+  height: 500px;
+}
+/* Delete this later */
+
 .header {
-  background-color: $color-primary;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: $warm;
+  height: 50px;
+  overflow: hidden;
 
   &--logo {
+    margin-right: 20px;
+    font-size: 36px;
     text-decoration: none;
     font-weight:bold;
+  }
+
+  &--navigation {
+    vertical-align: top;
+  }
+
+  &--nav-item {
+    padding: 20px 10px;
+    line-height: normal;
+    background-color: $warm;
+    -webkit-transition: background-color .25s; /* Safari */
+    transition: background-color .25s;
+
+    &:hover {
+      background-color: darken($warm, 5%);
+      color: $light;
+      text-decoration: none;
+    }
   }
 
   &--logo, &--navigation, &--nav-item {
     display: inline-block;
     color: #fff;
+  }
+}
+
+.news-item {
+  margin-bottom: 15px;
+  padding: 10px 15px 20px 15px;
+  background-color: $light;
+  border: 1px solid $light;
+  -webkit-transition: border-color .25s; /* Safari */
+  transition: border-color .25s;
+
+  &:hover {
+    border: 1px solid $dark;
+  }
+
+  &--link {
+    text-decoration: none;
+    color: $dark;
+
+    &:hover {
+      text-decoration: none;
+      color: $dark;
+    }
+  }
+
+  &--title {
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  &--teaser {
+    margin: 10px 0;
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  &--hoods {
+    margin: 0;
+    padding: 0;
+  }
+
+  &--hood {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  &--hood-link {
+    padding: 5px;
+    color: $light;
+    background-color: #626466;
+    text-transform: uppercase;
+    -webkit-transition: background-color .25s; /* Safari */
+    transition: background-color .25s;
+
+    &:hover {
+      color: $light;
+      text-decoration: none;
+      background-color: darken(#626466, 10%);
+    }
   }
 }

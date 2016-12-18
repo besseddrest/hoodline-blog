@@ -8,8 +8,8 @@ import {Provider} from 'react-redux'
 import css from './styles/app.scss';
 
 // Components
-import Main from './components/Main';
-import News from './components/News';
+import App from './components/App';
+import NewsFeed from './components/NewsFeed';
 import Post from './components/Post';
 
 import store, {history} from './store';
@@ -20,9 +20,9 @@ import store, {history} from './store';
 const router = (
   <Provider store={store}>
     <Router history={history}>
-      <Route path="/" component={Main}>
-        <IndexRoute component={News}></IndexRoute>
-        <Route path="/2016/12/:url" component={Post}></Route>
+      <Route path="/" component={App}>
+        <IndexRoute component={NewsFeed}></IndexRoute>
+        <Route path="/:url" component={Post}></Route>
       </Route>
     </Router>
   </Provider>

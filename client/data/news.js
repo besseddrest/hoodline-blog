@@ -4,7 +4,7 @@ const news = [
     "date": "Fri. December 16, 2016, 2:53pm",
     "title": "L-Taraval Pedestrian Safety Project Kicks Off In January; Here's What To Expect",
     "author": "Fiona Lee",
-    "url": "2016/12/what-to-expect-l-taraval-pedestrian-safety",
+    "url": "what-to-expect-l-taraval-pedestrian-safety",
     "teaser": "January will see six major changes to the Taraval corridor.",
     "neighborhoods": ["Outer Sunset", "Parkside", "West Portal"],
     "img": "https://hoodwork-production.s3.amazonaws.com/uploads/story/image/29534/Passengers_disembark_from_the_L-Taraval_at_30th_Avenue_and_Taraval.jpg",
