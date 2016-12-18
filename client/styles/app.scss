@@ -2,11 +2,11 @@
 
 $dark: #000;
 $light: #fff;
+$muted: #eeeff0;
 $warm: rgba(255,51,0,0.95);
 
 body {
-  background-color: #eeeff0;
-  padding-top: 65px;
+  background-color: $muted;
 }
 
 /* Delete this later */
@@ -55,7 +55,17 @@ body {
   }
 }
 
-.news-item {
+.container {
+  &--feed {
+    margin-top: 65px;
+  }
+
+  &--post {
+    margin-top: 50px;
+  }
+}
+
+.feed-item {
   margin-bottom: 15px;
   padding: 10px 15px 20px 15px;
   background-color: $light;
@@ -111,5 +121,13 @@ body {
       text-decoration: none;
       background-color: darken(#626466, 10%);
     }
+  }
+}
+
+.post {
+  background-color: darken($muted, 5%);
+
+  &--main {
+    background-color: $light;
   }
 }
