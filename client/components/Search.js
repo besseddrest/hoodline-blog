@@ -1,18 +1,23 @@
 import React from 'react';
 
 const Search = React.createClass({
-  handleSubmit(e, value) {
-    e.preventDefault();
+  // submit if "Search" was pressed
+  handleClick() {
     this.props.submitSearch(this.refs.searchPosts.value);
+  },
+
+  handleKeyUp(e) {
+    // submit if "Enter" was the key pressed
+    if (e.keyCode == 13) {
+      this.props.submitSearch(this.refs.searchPosts.value);
+    }
   },
 
   render() {
     return (
       <div className="search">
-        <form name="thisForm" onSubmit={this.handleSubmit}>
-          <input ref="searchPosts" placeholder="Search" type="text" className="form-control" aria-label="Search" />
-          <button type="submit" >Submit</button>
-        </form>
+          <input onKeyUp={this.handleKeyUp} ref="searchPosts" placeholder="Search" type="text" />
+          <a onClick={this.handleClick}>Search</a>
       </div>
     )
   }
