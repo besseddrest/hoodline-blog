@@ -1,5 +1,64 @@
 const news = [
   {
+    "date": "Tuesday December 20, 2016, 9:49am",
+    "title": "Pedestrian Struck, Dragged By Muni Bus At 3rd & Market",
+    "author": "Brittany Hopkins",
+    "url": "pedestrian-struck-dragged-by-muni-bus-at-3rd-market",
+    "teaser": "A 60-year-old woman was rescued yesterday evening after being hit and trapped beneath a bus downtown.",
+    "neighborhoods": ["Financial District"],
+    "img": "https://hoodwork-production.s3.amazonaws.com/uploads/story/image/29708/third___market.jpg",
+    "img_caption": "Photo: Google Maps",
+    "content": '<p>Around 7pm yesterday evening, a woman was critically injured after being dragged under a Muni bus at Market and Third/Kearney.</p><p><a href="http://www.sfchronicle.com/news/article/Woman-struck-hurt-by-Muni-bus-at-3rd-and-Market-10807438.php" target="_blank">According to the </a><i><a href="http://www.sfchronicle.com/news/article/Woman-struck-hurt-by-Muni-bus-at-3rd-and-Market-10807438.php" target="_blank">Chronicle</a></i>, the 60-year-old victim was struck by a bus running the 9-San Bruno line then trapped under the vehicle. <i>KRON4</i><span style="background-color: rgb(255, 255, 255);">&nbsp;</span><a href="http://kron4.com/2016/07/21/sfmta-board-approves-3-25m-settlement-in-2013-death-of-cyclist/" target="_blank">reports</a><span style="background-color: rgb(255, 255, 255);"> that witnesses saw the woman running across the street, as the bus approached the intersection, before she was hit.</span></p>'
+  },
+  {
+    "date": "Tuesday December 20, 2016, 9:11am",
+    "title": "HandUp, Gift Card Program For SF's Homeless, Adds New Retail Sites, Services",
+    "author": "Teresa Hammerl ",
+    "url": "handup-gift-card-program-for-sf-s-homeless-adds-new-retail-sites-services",
+    "teaser": "The $25 gift cards are designed to be handed out to homeless people so they can purchase food, clothes, and more.",
+    "neighborhoods": ["Citywide", "Bayview", "Civic Center", "Mission", "SoMa"],
+    "img": "https://hoodwork-production.s3.amazonaws.com/uploads/story/image/29658/Image_3_Downing_Giving.jpg",
+    "img_caption": "Photos: Ken Fisher/HandUp",
+    "content": '<p>Considering giving to those in need this holiday season? One way you can do so is through <a href="https://handup.org/">HandUp</a>, which offers <a href="https://handup.org/giftcards">$25 gift cards</a> designed to be handed out to people living on the streets. </p>'
+  },
+  {
+    "date": "Monday December 19, 2016, 3:03pm",
+    "title": "Hoodline Survey: Which Topics Do You Care About Most?",
+    "author": "Hoodline Staff ",
+    "url": "hoodline-survey-which-topics-do-you-care-about-most",
+    "teaser": "Got a minute? Help us make Hoodline better by answering a few questions!",
+    "neighborhoods": ["Citywide", "Oakland"],
+    "img": "https://hoodwork-production.s3.amazonaws.com/uploads/story/image/29664/yesno.jpg",
+    "img_caption": "Photo: quinnanya/Flickr",
+    "content": "<p>Happy fast-approaching holidays, readers! We'd love to finish out the year by learning a little more about your local news preferences.&nbsp;To that end, we've put together a one-minute survey, and we'd truly appreciate your input:<br></p>"
+  },
+  {
+    "date": "Monday December 19, 2016, 10:41am",
+    "title": "Could Today’s Electoral Vote Swing The Election? We Asked A Bay Area Elector",
+    "author": "Saul Sugarman",
+    "url": "could-today-s-electoral-vote-swing-the-election-we-asked-a-bay-area-elector",
+    "teaser": "We spoke to Bay Area local Tim Farley, one of California's 55 Electoral College members, about today's big vote.",
+    "neighborhoods": ["Citywide"],
+    "img": "https://hoodwork-production.s3.amazonaws.com/uploads/story/image/29640/Tim-Farley.jpg",
+    "img_caption": "Tim Farley. (Photo: Courtesy of the Martinez Gazette)",
+    "content": "<p>Today, the 538 members of the Electoral College will meet in their respective state capitols to choose the next President of the United States.</p><p>Typically, representatives from each state cast their electoral votes based on which candidate took home the majority of votes in their state. But this year, Donald Trump captured a majority of states while Hillary Clinton captured a majority of the popular vote, placing a renewed spotlight on the Electoral College.</p>"
+  },
+  {
+    "date": "Monday December 19, 2016, 9:49am",
+    "title": "Where To Celebrate Hanukkah In San Francisco",
+    "author": "David-Elijah Nahmod",
+    "url": "where-to-celebrate-hanukkah-in-san-francisco",
+    "teaser": "From Jewish-Italian dinners to outdoor candle-lighting to kosher comedy in a Chinese restaurant, here are tips for eight nights of fun.",
+    "neighborhoods": ["Citywide", "Castro", "Chinatown", "Inner Richmond", "Lower Nob Hill", "Mid-Market", "Noe Valley"],
+    "img": "https://hoodwork-production.s3.amazonaws.com/uploads/story/image/29620/hanukkah_candles_.jpg",
+    "img_caption": "Photo: Shutterstock",
+    "content": "<p>This year, the celebration of Hanukkah, the Jewish Festival of Lights, coincides with Christmas, with the first night on December 24th (a.k.a. Christmas Eve). For eight days, Jews around the world will light candles and exchange gifts with loved ones and friends. </p>"
+  },
+
+
+
+
+  {
     "date": "Fri. December 16, 2016, 2:53pm",
     "title": "L-Taraval Pedestrian Safety Project Kicks Off In January; Here's What To Expect",
     "author": "Fiona Lee",
@@ -72,7 +131,7 @@ const news = [
     "author": "Allie Pape",
     "url": "56-year-old-pedestrian-suffers-life-threatening-injuries-in-soma-hit-and-run",
     "teaser": 'The driver of the vehicle is still being sought.',
-    "neighborhoods": ["SOMA"],
+    "neighborhoods": ["SoMa"],
     "img": "https://hoodline.imgix.net/uploads/story/image/29526/cccc.jpg",
     "img_caption": 'Photo: Alan Cleaver/<a href="https://www.flickr.com/photos/alancleaver/4121423119/in/photolist-7hcnvi-72LJZf-dwGXrt-4EU8BN-fKC3s-dp2nNZ-kSxv9v-9LaPC1-aR2UNR-cztLTG-41Atnf-6wPVKU-dbk2hR-arjtW4-5gEEyF-4qNHdR-dM1sax-8oQsBH-ekv174-psLkNs-5Tyhqd-bXx8Ly-kJsWti-9qXbC7-buSRGy-nYk5Ko-7xm1oq-jZcftX-5KfVPX-dPJQe6-aa3ZNt-nYqU2i-66MYS6-qeQud1-8H2e6Y-etuTkb-g9Ru4-ckp47w-dRy2L5-6ZWo5S-5E8wr6-oVAzDR-rvkYKh-496CHm-dzrESe-dzxa3G-jPg8YH-9x1fyu-jVa4Pi-8X65uf" target="_blank">Flickr</a>',
     "content": '<p>A 56-year-old man was hospitalized with life-threatening injuries last night after being struck by a vehicle at Fifth and Bluxome streets in SoMa.&nbsp;</p>'

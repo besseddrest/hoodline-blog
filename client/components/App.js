@@ -5,15 +5,17 @@ import * as actionCreators from '../actions/actionCreators';
 import Main from './Main';
 
 function mapStateToProps(state) {
-  var filteredNews = [],
-      searchText = state.search.toLowerCase(),
-      neighborhood = state.neighborhood;
-
   // when we filter we don't actually want to remove data from news,
   // just make a copy of everything that matches and return that
+  var filteredNews = [],
+      searchText = state.filter.bySearch.toLowerCase(),
+      neighborhood = state.filter.byHood;
+
+  console.log(neighborhood);
+
 
   // filter by search text
-  if (searchText) {
+  if (state.filter.type === 'search') {
     for (var i = 0; i < state.news.length; i++) {
       var titleText = state.news[i].title.toLowerCase(),
           teaserText = state.news[i].teaser.toLowerCase();
@@ -25,8 +27,10 @@ function mapStateToProps(state) {
     }
   }
 
+
+
   // filter by single neighborhood
-  if (neighborhood) {
+  if (state.filter.type === 'hood') {
     for (var i = 0; i < state.news.length; i++) {
       if (state.news[i].neighborhoods.indexOf(neighborhood) > -1) {
         filteredNews.push(state.news[i]);
@@ -34,11 +38,12 @@ function mapStateToProps(state) {
     }
   }
 
+  console.log(filteredNews);
+
   // return filteredNews if there's at least one match, else return all the news data
   return {
     news: (filteredNews.length > 0) ? filteredNews : state.news,
-    search: (filteredNews.length > 0) ? state.search : '',
-    neighborhood: (filteredNews.length > 0) ? state.neighborhood : ''
+    filter: (filteredNews.length > 0) ? state.filter : {type: '', bySearch: '', byHood: ''}
   }
 }
 
