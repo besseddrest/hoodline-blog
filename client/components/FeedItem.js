@@ -3,9 +3,13 @@ import {Link} from 'react-router';
 
 const FeedItem = React.createClass({
   eachHood(hood, i) {
-      return (
-        <Hood key={i} i={i} hood={hood}/>
-      )
+    return (
+      <Hood onClick={this.handleClick.bind(null, hood)} key={i} i={i} hood={hood}/>
+    )
+  },
+
+  handleClick(value) {
+    this.props.showNeighborhood(value);
   },
 
   render() {
@@ -28,10 +32,11 @@ const FeedItem = React.createClass({
 });
 
 const Hood = React.createClass({
+
   render() {
     return (
       <li className="feed-item--hood">
-        <a className="feed-item--hood-link" href="#">{this.props.hood}</a>
+        <a className="feed-item--hood-link" href="javascript:void(0);" onClick={this.props.onClick}>{this.props.hood}</a>
       </li>
     )
   }

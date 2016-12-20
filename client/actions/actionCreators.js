@@ -4,3 +4,10 @@ export function submitSearch(value) {
     value
   }
 }
+
+export function showNeighborhood(value) {
+  return {
+    type: 'SHOW_NEIGHBORHOOD',
+    value
+  }
+}

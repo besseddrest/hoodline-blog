@@ -7,12 +7,14 @@ import rootReducer from './reducers/index';
 // import data
 import news from './data/news';
 import search from './data/search';
+import neighborhood from './data/neighborhood';
 
 // create an object for the default data
 // there should be a key for each reducer
 const defaultState = {
   news,
-  search
+  search,
+  neighborhood
 };
 
 const store = createStore(rootReducer, defaultState);
