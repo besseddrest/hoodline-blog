@@ -24,7 +24,7 @@ const router = (
       <Route path="/" component={App}>
         <IndexRoute component={NewsFeed}></IndexRoute>
         <Route path="/2016/:url" component={Post}></Route>
-        <Route path="/hood/:url" component={HoodPage}></Route>
+        <Route path="/neighborhoods/:url" component={HoodPage}></Route>
       </Route>
     </Router>
   </Provider>

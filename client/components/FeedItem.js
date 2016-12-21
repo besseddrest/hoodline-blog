@@ -14,9 +14,9 @@ const FeedItem = React.createClass({
           <img className="feed-item--image img-responsive" src={item.img} />
           <div className="feed-item--teaser">{item.teaser}</div>
         </Link>
-        <ul className="feed-item--hoods">
+        <div className="feed-item--hoods">
           {item.neighborhoods.map((item, i) => <FeedItemHoods {...this.props} key={i} i={i} item={item} />)}
-        </ul>
+        </div>
       </article>
     )
   }
@@ -27,11 +27,9 @@ const FeedItemHoods = React.createClass({
   render() {
     const hoodPath = this.props.item.replace("'", '').toLowerCase().split(' ').join('-');
     return (
-      <li className="feed-item--hood">
-        <Link onClick={this.props.showNeighborhood.bind(null, this.props.item)} to={`/hood/${hoodPath}`}>
-          {this.props.item}
-        </Link>
-      </li>
+      <Link className="feed-item--hood" onClick={this.props.showNeighborhood.bind(null, this.props.item)} to={`/neighborhoods/${hoodPath}`}>
+        {this.props.item.toUpperCase()}
+      </Link>
     )
   }
 });
