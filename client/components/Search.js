@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Search component, which will filter the NewsFeed based on a value match in the Teaser & Title
 const Search = React.createClass({
   // submit if "Search" was pressed
   handleClick() {

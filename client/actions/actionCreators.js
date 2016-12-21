@@ -18,3 +18,10 @@ export function clickedLogo(value) {
     value
   }
 }
+
+export function filterNeighborhood(value) {
+  return {
+    type: 'FILTER_NEIGHBORHOOD',
+    value
+  }
+}

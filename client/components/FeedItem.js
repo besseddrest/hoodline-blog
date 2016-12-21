@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router';
 
+// Individual items in the NewsFeed component
 const FeedItem = React.createClass({
   render() {
     const item = this.props.item;
@@ -14,18 +15,22 @@ const FeedItem = React.createClass({
           <div className="feed-item--teaser">{item.teaser}</div>
         </Link>
         <ul className="feed-item--hoods">
-          {item.neighborhoods.map((item, i) => <FeedItemCategory {...this.props} key={i} i={i} item={item} />)}
+          {item.neighborhoods.map((item, i) => <FeedItemHoods {...this.props} key={i} i={i} item={item} />)}
         </ul>
       </article>
     )
   }
 });
 
-const FeedItemCategory = React.createClass({
+// Items in each FeedItem that links to the individual neighborhood pages
+const FeedItemHoods = React.createClass({
   render() {
+    const hoodPath = this.props.item.replace("'", '').toLowerCase().split(' ').join('-');
     return (
       <li className="feed-item--hood">
-        <a className="feed-item--hood-link" href="javascript:void(0);" onClick={this.props.showNeighborhood.bind(null, this.props.item)}>{this.props.item}</a>
+        <Link onClick={this.props.showNeighborhood.bind(null, this.props.item)} to={`/hood/${hoodPath}`}>
+          {this.props.item}
+        </Link>
       </li>
     )
   }

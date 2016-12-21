@@ -1,7 +1,7 @@
-// Main is really just a presentational component
 import React from 'react';
 import {Link} from 'react-router';
 
+// Individual Post component, which will include details of the author in the right column
 const Post = React.createClass({
   renderWebsite(site) {
     if (site) {

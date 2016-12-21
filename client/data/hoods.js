@@ -1,150 +1,297 @@
 const hoods = [
   {
-    "name": "Alamo Square"
+    "name": "Alamo Square",
+    "img": "https://hoodline.imgix.net/uploads/neighborhood_coverages/map/10/nlp-map--alamosquare.png",
+    "shortDesc": "A POSTCARD-PERFECT ENCLAVE WITH A KILLER VIEW",
+    "longDesc": "Known for its historic homes (including the iconic Painted Ladies) and its sweeping views of downtown, Alamo Square draws picnickers, dog owners, tennis players, and those seeking a touch of nature and history just steps from the busy Divisadero corridor."
   },
   {
-    "name": "Bayview"
+    "name": "Bayview",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Bernal Heights"
+    "name": "Bernal Heights",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Castro"
+    "name": "Castro",
+    "img": "https://hoodline.imgix.net/uploads/neighborhood_coverages/map/8/nlp-map--castro.png",
+    "shortDesc": "SAN FRANCISCO&apos;S &ldquo;GAYBORHOOD&rdquo; IS A LONGTIME BEACON OF DIVERSITY",
+    "longDesc": "Generations of activists made the Castro a global epicenter for LGBTQ rights, and it&apos;s now home to a vibrant community that welcomes all genders and sexualities. Vibrant nightlife, boutiques, and historic homes draw both locals and tourists to one of the world&apos;s great &ldquo;gayborhoods.&rdquo;"
   },
   {
-    "name": "Chinatown"
+    "name": "Chinatown",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Civic Center"
+    "name": "Civic Center",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Cole Valley"
+    "name": "Cole Valley",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Cow Hollow"
+    "name": "Cow Hollow",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Divisadero"
+    "name": "Divisadero",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Dogpatch"
+    "name": "Dogpatch",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Duboce Triangle"
+    "name": "Duboce Triangle",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Embarcadero"
+    "name": "Embarcadero",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Excelsior"
+    "name": "Excelsior",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Fillmore"
+    "name": "Fillmore",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Financial District"
+    "name": "Financial District",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Fisherman's Wharf"
+    "name": "Fisherman's Wharf",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Glen Park"
+    "name": "Glen Park",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Hayes Valley"
+    "name": "Hayes Valley",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Ingleside"
+    "name": "Ingleside",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Inner Richmond"
+    "name": "Inner Richmond",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Inner Sunset"
+    "name": "Inner Sunset",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Jackson Square"
+    "name": "Jackson Square",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Japantown"
+    "name": "Japantown",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Lake Shore"
+    "name": "Lake Shore",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Lower Haight"
+    "name": "Lower Haight",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Lower Nob Hill"
+    "name": "Lower Nob Hill",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Lower Pac Heights"
+    "name": "Lower Pac Heights",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Marina"
+    "name": "Marina",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Mid-Market"
+    "name": "Mid-Market",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Mission"
+    "name": "Mission",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Nob Hill"
+    "name": "Nob Hill",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Noe Valley"
+    "name": "Noe Valley",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "NoPa"
+    "name": "NoPa",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "North Beach"
+    "name": "North Beach",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Ocean Beach"
+    "name": "Ocean Beach",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Outer Richmond"
+    "name": "Outer Richmond",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Outer Sunset"
+    "name": "Outer Sunset",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Pacific Heights"
+    "name": "Pacific Heights",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Polk"
+    "name": "Polk",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Portrero Hill"
+    "name": "Portrero Hill",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Russian Hill"
+    "name": "Russian Hill",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "SoMa"
+    "name": "SoMa",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Telegraph Hill"
+    "name": "Telegraph Hill",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Tenderloin"
+    "name": "Tenderloin",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Twin Peaks"
+    "name": "Twin Peaks",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Union Square"
+    "name": "Union Square",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Upper Haight"
+    "name": "Upper Haight",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "West Portal"
+    "name": "West Portal",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   },
   {
-    "name": "Western Addition"
+    "name": "Western Addition",
+    "img": "",
+    "shortDesc": "",
+    "longDesc": ""
   }
 ]
 

@@ -11,6 +11,7 @@ import css from './styles/app.scss';
 import App from './components/App';
 import NewsFeed from './components/NewsFeed';
 import Post from './components/Post';
+import HoodPage from './components/HoodPage';
 
 import store, {history} from './store';
 
@@ -23,6 +24,7 @@ const router = (
       <Route path="/" component={App}>
         <IndexRoute component={NewsFeed}></IndexRoute>
         <Route path="/2016/:url" component={Post}></Route>
+        <Route path="/hood/:url" component={HoodPage}></Route>
       </Route>
     </Router>
   </Provider>
