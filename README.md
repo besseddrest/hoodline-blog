@@ -6,6 +6,7 @@ The boilerplate for this project was written by Wes Bos, and can be found [here]
 ## TODOs / Known Issues
 * right column should filter multiple neighborhoods
 * visiting a neighborhood URL directly will not set state correctly and therefore will throw an error
+    * look for action type @@router/LOCATION_CHANGE in reducer
 
 ## Objectives
 My goal with this project is to demonstrate the following:
