@@ -2,16 +2,6 @@ import React from 'react';
 import {Link} from 'react-router';
 
 const FeedItem = React.createClass({
-  eachHood(hood, i) {
-    return (
-      <Hood onClick={this.handleClick.bind(null, hood)} key={i} i={i} hood={hood}/>
-    )
-  },
-
-  handleClick(value) {
-    this.props.showNeighborhood(value);
-  },
-
   render() {
     const item = this.props.item;
 
@@ -24,19 +14,18 @@ const FeedItem = React.createClass({
           <div className="feed-item--teaser">{item.teaser}</div>
         </Link>
         <ul className="feed-item--hoods">
-          {item.neighborhoods.map(this.eachHood)}
+          {item.neighborhoods.map((item, i) => <FeedItemCategory {...this.props} key={i} i={i} item={item} />)}
         </ul>
       </article>
     )
   }
 });
 
-const Hood = React.createClass({
-
+const FeedItemCategory = React.createClass({
   render() {
     return (
       <li className="feed-item--hood">
-        <a className="feed-item--hood-link" href="javascript:void(0);" onClick={this.props.onClick}>{this.props.hood}</a>
+        <a className="feed-item--hood-link" href="javascript:void(0);" onClick={this.props.showNeighborhood.bind(null, this.props.item)}>{this.props.item}</a>
       </li>
     )
   }

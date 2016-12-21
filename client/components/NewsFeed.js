@@ -2,6 +2,7 @@
 import React from 'react';
 import FeedItem from './FeedItem';
 import Search from './Search';
+import Hoods from './Hoods';
 
 const NewsFeed = React.createClass({
   // show this block if the user has entered text into the search box
@@ -25,15 +26,11 @@ const NewsFeed = React.createClass({
         </div>
         <div className="right-col col-md-3 hidden-sm hidden-xs bg-info">
           <Search {...this.props} />
+          <h3>Filter NeighborHoods</h3>
+          <Hoods {...this.props} />
         </div>
       </div>
     )
-  }
-});
-
-const SearchResults = React.createClass({
-  render() {
-    return
   }
 });
 

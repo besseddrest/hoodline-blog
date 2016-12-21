@@ -37,7 +37,8 @@ function mapStateToProps(state) {
   return {
     news: (filteredNews.length > 0) ? filteredNews : state.news,
     filter: (filteredNews.length > 0) ? state.filter : {type: '', bySearch: '', byHood: ''},
-    authors: state.authors
+    authors: state.authors,
+    hoods: state.hoods
   }
 }
 

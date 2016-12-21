@@ -7,6 +7,12 @@ function filter(state = '', action){
         bySearch: '',
         byHood: action.value
       };
+    case 'FILTER_NEIGHBORHOOD':
+      return {
+        type: 'hood',
+        bySearch: '',
+        byHood: action.value
+      };
     case 'SUBMIT_SEARCH':
       return {
         type: 'search',
