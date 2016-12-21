@@ -11,9 +11,6 @@ function mapStateToProps(state) {
       searchText = state.filter.bySearch.toLowerCase(),
       neighborhood = state.filter.byHood;
 
-  console.log(neighborhood);
-
-
   // filter by search text
   if (state.filter.type === 'search') {
     for (var i = 0; i < state.news.length; i++) {
@@ -27,8 +24,6 @@ function mapStateToProps(state) {
     }
   }
 
-
-
   // filter by single neighborhood
   if (state.filter.type === 'hood') {
     for (var i = 0; i < state.news.length; i++) {
@@ -38,12 +33,11 @@ function mapStateToProps(state) {
     }
   }
 
-  console.log(filteredNews);
-
   // return filteredNews if there's at least one match, else return all the news data
   return {
     news: (filteredNews.length > 0) ? filteredNews : state.news,
-    filter: (filteredNews.length > 0) ? state.filter : {type: '', bySearch: '', byHood: ''}
+    filter: (filteredNews.length > 0) ? state.filter : {type: '', bySearch: '', byHood: ''},
+    authors: state.authors
   }
 }
 

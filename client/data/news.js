@@ -1,5 +1,16 @@
 const news = [
   {
+    "date": "Tuesday December 20, 2016, 10:45am",
+    "title": "2016 In Review: SF Public Works Director On Curbing Street Poop, Trump Funding Cuts & More",
+    "author": "Brittany Hopkins",
+    "url": "2016-in-review-sf-public-works-director-on-curbing-street-poop-trump-funding-cuts-more",
+    "teaser": "Will the city offer more public toilets next year? Could federal cuts stall improvements to SF&apos;s aging infrastructure? Public Works Director Mohammed Nuru answers these questions and more.",
+    "neighborhoods": ["Dogpatch", "Mid-Market", "Potrero Hill", "SoMa", "Tenderloin", "Upper Haight"],
+    "img": "https://hoodwork-production.s3.amazonaws.com/uploads/story/image/29697/Mohammed_Nuru_2015.jpg",
+    "img_caption": "San Francisco Public Works Director Mohammed Nuru (Photo courtesy of SF Public Works)",
+    "content": "<p>With 2016 barreling to a finish, we started wondering how some of San Francisco&apos;s government agencies are preparing for the new year.</p></p>Are they celebrating big wins from the past 12 months? Considering how to avoid falling into specific traps again next year?</p>"
+  },
+  {
     "date": "Tuesday December 20, 2016, 9:49am",
     "title": "Pedestrian Struck, Dragged By Muni Bus At 3rd & Market",
     "author": "Brittany Hopkins",
@@ -54,10 +65,28 @@ const news = [
     "img_caption": "Photo: Shutterstock",
     "content": "<p>This year, the celebration of Hanukkah, the Jewish Festival of Lights, coincides with Christmas, with the first night on December 24th (a.k.a. Christmas Eve). For eight days, Jews around the world will light candles and exchange gifts with loved ones and friends. </p>"
   },
-
-
-
-
+  {
+    "date": "Saturday December 17, 2016, 11:43am",
+    "title": "FiDi & North Beach Crime: Drive-By Shooting, Frying Pan Assault, More",
+    "author": "Nathan Falstreau",
+    "url": "fidi-and-north-beach-crime-drive-by-shooting-frying-pan-assault-more",
+    "teaser": "Our mid-December crime roundup features violent robberies, a hot prowl, home invasion and more.",
+    "neighborhoods": ["Chinatown", "Financial District", "North Beach", "Russian Hill", "Union Square"],
+    "img": "https://hoodwork-production.s3.amazonaws.com/uploads/story/image/29576/SFPD_-_Vallejo.jpg",
+    "img_caption": "Photo: Geri Koeppel/Hoodline",
+    "content": '<p>In this week&apos;s Central Station newsletter, Captain David Lazar writes that lieutenants, captains and command staff will be going through procedural justice training this month. The training is centered around the concepts of listening to the public, being fair and impartial, and respecting people&apos;s dignity. "This training serves as a reminder to us officers about the importance of our relationship with the community we serve.</p>"'
+  },
+  {
+    "date": "Friday December 16, 2016, 3:41pm",
+    "title": "Despite Pressure From DMV & Mayor Ed Lee, Uber To Keep Self-Driving Cars On SF Roads",
+    "author": "Allie Pape",
+    "url": "despite-pressure-from-dmv-mayor-ed-lee-uber-to-keep-self-driving-cars-on-sf-roads",
+    "teaser": "The DMV has threatened legal action and Mayor Lee has requested for Uber to stop, but they plan to keep going.",
+    "neighborhoods": ["Citywide"],
+    "img": "https://hoodwork-production.s3.amazonaws.com/uploads/story/image/29559/uber_car.jpg",
+    "img_caption": "Photo: Uber",
+    "content": "<p>Uber has been under fire since the moment it opened up its fleet of self-driving SUVs to San Francisco customers on Monday. In addition to multiple reports that the vehicles were spotted running red lights, the company neglected to register for an autonomous vehicle permit with the California DMV, a step that has been taken by 20 of its competitors, including Google and General Motors.</p>"
+  },
   {
     "date": "Fri. December 16, 2016, 2:53pm",
     "title": "L-Taraval Pedestrian Safety Project Kicks Off In January; Here's What To Expect",

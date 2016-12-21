@@ -11,3 +11,10 @@ export function showNeighborhood(value) {
     value
   }
 }
+
+export function clickedLogo(value) {
+  return {
+    type: 'CLICKED_LOGO',
+    value
+  }
+}

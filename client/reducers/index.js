@@ -3,10 +3,12 @@ import {routerReducer} from 'react-router-redux';
 
 import news from './news';
 import filter from './filter';
+import authors from './authors';
 
 const rootReducer = combineReducers({
   news,
   filter,
+  authors,
   routing: routerReducer
 });
 

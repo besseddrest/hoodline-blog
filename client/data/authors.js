@@ -48,7 +48,7 @@ const authors = {
     "twitter": "hoodline",
     "website": "",
     "avatar": "https://hoodwork-production.s3.amazonaws.com/uploads/user/headshot/560/Screen_Shot_2014-06-17_at_1.14.51_PM.png"
-  }
+  },
   "Saul Sugarman": {
     "twitter": "saulsugarman ",
     "website": "",
@@ -58,6 +58,11 @@ const authors = {
     "twitter": "DavidElijahN",
     "website": "",
     "avatar": "https://hoodwork-production.s3.amazonaws.com/uploads/user/headshot/1532/Screen_Shot_2015-01-28_at_2.47.20_PM.png"
+  },
+  "Nathan Falstreau": {
+    "twitter": "NFalstreau",
+    "website": "",
+    "avatar": "https://hoodwork-production.s3.amazonaws.com/uploads/user/headshot/6929/Screen_Shot_2015-12-01_at_5.26.07_PM.png"
   }
 }
 

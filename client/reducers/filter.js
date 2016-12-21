@@ -12,7 +12,13 @@ function filter(state = '', action){
         type: 'search',
         bySearch: action.value,
         byHood: ''
-    };
+      };
+    case 'CLICKED_LOGO':
+      return {
+        type: '',
+        bySearch: '',
+        byHood: ''
+      };
     default:
       return state;
   }

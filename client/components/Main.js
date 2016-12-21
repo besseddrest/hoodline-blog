@@ -10,9 +10,9 @@ const Main = React.createClass({
       <div>
         <header className="header">
           <div className="container">
-            <Link to="/"><span className="header--logo">Haroldline</span></Link>
+            <Link onClick={this.props.clickedLogo} to="/"><span className="header--logo">Haroldline</span></Link>
             <nav className="header--navigation">
-              <Link className="header--nav-item" to="/">News</Link>
+              <Link onClick={this.props.clickedLogo} className="header--nav-item" to="/">News</Link>
               <a className="header--nav-item" href="#">Events</a>
             </nav>
           </div>

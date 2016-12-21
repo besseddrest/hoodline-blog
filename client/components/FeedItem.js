@@ -17,7 +17,7 @@ const FeedItem = React.createClass({
 
     return (
       <article className="feed-item">
-        <Link className="feed-item--link" to={`/${item.url}`}>
+        <Link className="feed-item--link" to={`/2016/${item.url}`}>
           <div className="feed-item--date">{item.date}</div>
           <h2 className="feed-item--title">{item.title}</h2>
           <img className="feed-item--image img-responsive" src={item.img} />
